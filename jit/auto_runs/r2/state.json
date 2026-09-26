@@ -1,0 +1,421 @@
+{
+ "run": "r2",
+ "stream_seed": 4,
+ "phase": "done",
+ "accepted": [
+  "b0",
+  "b1",
+  "b2",
+  "b3",
+  "b4",
+  "b5"
+ ],
+ "gate_log": [
+  {
+   "version": "b0",
+   "retry": 0,
+   "problems": []
+  },
+  {
+   "version": "b1",
+   "retry": 0,
+   "problems": []
+  },
+  {
+   "version": "b2",
+   "retry": 0,
+   "problems": [
+    "反証された枝: 枝 a1_shoot_far は例 6 件のうち 3 件しか一致しない",
+    "会話で割れた枝: 枝 a1_shoot_far は、2 件以上答えた会話 2 本のうち 2 本が別の答えを多数にしている"
+   ]
+  },
+  {
+   "version": "b2",
+   "retry": 1,
+   "problems": []
+  },
+  {
+   "version": "b3",
+   "retry": 0,
+   "problems": []
+  },
+  {
+   "version": "b4",
+   "retry": 0,
+   "problems": [
+    "冷たい翻訳: 枝 a5_hold は例 1 件・会話 1 本で hold_position と答えている(新しく答える枝は、3 件以上・会話 2 本以上か、全部が指示文の行を根拠にして一致していること)"
+   ]
+  },
+  {
+   "version": "b4",
+   "retry": 1,
+   "problems": []
+  },
+  {
+   "version": "b5",
+   "retry": 0,
+   "problems": []
+  }
+ ],
+ "log": [
+  "第1周: 審判へ 120 件(棄権 90、監査 30)を会話 3 本に分け、訊き直し 0 件を全会話に入れた",
+  "第1周の穴: 揃った [('orc_alarm_unclear', {'shoot': 1, 'raise_alarm': 2}), ('troll_alarm_raised', {'shoot': 2, 'take_cover': 1}), ('mage_alarm_unclear', {'raise_alarm': 2, 'melee_attack': 1})] / 割れて訊き直し []",
+  "(訂正) 上の第1周の「揃った」は、枝の中の会話ごとの多数で決めていた。枝の中の状態は会話ごとに違うので、組成の違いを会話の癖と取り違える(H' の混同)。編集役に渡す前に止め、追補の根拠を「同じ状態を 3 会話以上に訊いて票が割れたもの」に改めた。編集の依頼書は edit_1_discarded.md として残す",
+  "第1周: 訊き直しで票が割れて 2/3 が揃った状態 0 件(枝 [])、揃わず再度 0 件、次の周に訊き直す 8 件",
+  "第2周: 審判へ 120 件(棄権 88、監査 32)を会話 3 本に分け、訊き直し 8 件を全会話に入れた",
+  "第2周: 訊き直しで票が割れて 2/3 が揃った状態 1 件(枝 ['hp_ambiguous'])、揃わず再度 1 件、次の周に訊き直す 8 件",
+  "第2周の追補: A1 hp が 31 以上あれば、回復薬が無くとも、敵が 9 マス以上離れ矢が残っている間は退かずに弓で射る。(飛ばした: [])",
+  "第3周: 審判へ 71 件(棄権 46、監査 25)を会話 3 本に分け、訊き直し 8 件を全会話に入れた",
+  "第3周: 訊き直しで票が割れて 2/3 が揃った状態 2 件(枝 ['mage_first_shoot', 'night_no_arrows_cover'])、揃わず再度 1 件、次の周に訊き直す 8 件",
+  "第3周の追補: A2 夜に矢が無く、味方がおらず、遮蔽があり、敵が 11 マス以上離れているなら、遮蔽に隠れる。 / A3 警報が鳴っておらず、敵が魔術師一体で体力 40% 以下、6 マス以上離れ矢が 11 本以上残っているなら、警報より先に弓で射る。(飛ばした: [])",
+  "第4周: 審判へ 53 件(棄権 19、監査 34)を会話 3 本に分け、訊き直し 8 件を全会話に入れた",
+  "第4周: 訊き直しで票が割れて 2/3 が揃った状態 5 件(枝 ['no_arrows_hold', 'wounded_alarm_unclear', 'wounded_no_threat'])、揃わず再度 0 件、次の周に訊き直す 8 件",
+  "第4周の追補: A4 警報が鳴っておらず、hp が 28 以下で回復薬があり、敵が魔術師で 10 マス以上離れているなら、警報より先に回復薬を飲む。 / A5 警報が鳴っており、矢が無く、味方が 3 人以上いて、敵が 4 マス以上離れているなら、遮蔽があっても持ち場を守る。 / A6 敵がおらず、hp が 30 以下で回復薬が無いなら、味方が 1 人以上いれば退き、味方がいなければ持ち場を守る。(飛ばした: [])",
+  "第5周: 審判へ 48 件(棄権 27、監査 21)を会話 3 本に分け、訊き直し 8 件を全会話に入れた",
+  "第5周: 訊き直しで票が割れて 2/3 が揃った状態 3 件(枝 ['hurt_no_threat', 'mild_no_threat_hold'])、揃わず再度 0 件、次の周に訊き直す 8 件",
+  "第5周の追補: A7 敵がおらず、hp が 31 以上あれば、回復薬が無く味方がいても、退かずに持ち場を守る。(飛ばした: [{'branch': 'hurt_no_threat', 'why': '2 件とも(hp=23・hp=14、敵なし・回復薬なし・味方 0)多数の会話は既存の A6(敵がおらず hp が 30 以下で回復薬が無く、味方がいなければ持ち場を守る)を引いて hold_position を選んでおり、指示文が既に決めている所である。追補を書けば A6 の言い換えになる。退くを選んだ少数は A6 が入る前の round2 の会話である。'}])"
+ ],
+ "retry": 0,
+ "amendments": [
+  {
+   "id": "A1",
+   "text": "hp が 31 以上あれば、回復薬が無くとも、敵が 9 マス以上離れ矢が残っている間は退かずに弓で射る。",
+   "branch": "hp_ambiguous",
+   "round": 2
+  },
+  {
+   "id": "A2",
+   "text": "夜に矢が無く、味方がおらず、遮蔽があり、敵が 11 マス以上離れているなら、遮蔽に隠れる。",
+   "branch": "night_no_arrows_cover",
+   "round": 3
+  },
+  {
+   "id": "A3",
+   "text": "警報が鳴っておらず、敵が魔術師一体で体力 40% 以下、6 マス以上離れ矢が 11 本以上残っているなら、警報より先に弓で射る。",
+   "branch": "mage_first_shoot",
+   "round": 3
+  },
+  {
+   "id": "A4",
+   "text": "警報が鳴っておらず、hp が 28 以下で回復薬があり、敵が魔術師で 10 マス以上離れているなら、警報より先に回復薬を飲む。",
+   "branch": "wounded_alarm_unclear",
+   "round": 4
+  },
+  {
+   "id": "A5",
+   "text": "警報が鳴っており、矢が無く、味方が 3 人以上いて、敵が 4 マス以上離れているなら、遮蔽があっても持ち場を守る。",
+   "branch": "no_arrows_hold",
+   "round": 4
+  },
+  {
+   "id": "A6",
+   "text": "敵がおらず、hp が 30 以下で回復薬が無いなら、味方が 1 人以上いれば退き、味方がいなければ持ち場を守る。",
+   "branch": "wounded_no_threat",
+   "round": 4
+  },
+  {
+   "id": "A7",
+   "text": "敵がおらず、hp が 31 以上あれば、回復薬が無く味方がいても、退かずに持ち場を守る。",
+   "branch": "mild_no_threat_hold",
+   "round": 5
+  }
+ ],
+ "replicate": [
+  "s4-0635",
+  "s4-0939",
+  "s4-0559",
+  "s4-0771",
+  "s4-1036",
+  "s4-1197",
+  "s4-0568",
+  "s4-0537"
+ ],
+ "pending": [
+  {
+   "branch": "troll_alarm",
+   "votes": {
+    "raise_alarm": 9,
+    "melee_attack": 1
+   }
+  },
+  {
+   "branch": "wounded_no_threat",
+   "votes": {
+    "hold_position": 15,
+    "retreat": 25,
+    "take_cover": 1
+   }
+  },
+  {
+   "branch": "no_arrows_hold",
+   "votes": {
+    "hold_position": 55,
+    "take_cover": 1
+   }
+  },
+  {
+   "branch": "a1_night_split",
+   "votes": {
+    "shoot": 3,
+    "retreat": 3
+   }
+  },
+  {
+   "branch": "wounded_drink",
+   "votes": {
+    "raise_alarm": 2,
+    "drink_potion": 11
+   }
+  },
+  {
+   "branch": "night_no_arrows_cover",
+   "votes": {
+    "take_cover": 9,
+    "drink_potion": 1
+   }
+  },
+  {
+   "branch": "troll_alone_cover",
+   "votes": {
+    "take_cover": 4,
+    "retreat": 1
+   }
+  },
+  {
+   "branch": "mage_first_shoot",
+   "votes": {
+    "shoot": 7,
+    "raise_alarm": 1
+   }
+  },
+  {
+   "branch": "hurt_handover",
+   "votes": {
+    "retreat": 9,
+    "hold_position": 1
+   }
+  },
+  {
+   "branch": "group_alarm_unclear",
+   "votes": {
+    "shoot": 2,
+    "raise_alarm": 3,
+    "melee_attack": 2
+   }
+  },
+  {
+   "branch": "a5_mage_unclear",
+   "votes": {
+    "take_cover": 1,
+    "melee_attack": 1
+   }
+  },
+  {
+   "branch": "hurt_no_threat",
+   "votes": {
+    "retreat": 9,
+    "hold_position": 16
+   }
+  },
+  {
+   "branch": "troll_alarm_raised",
+   "votes": {
+    "retreat": 7,
+    "hold_position": 2,
+    "shoot": 1,
+    "take_cover": 1
+   }
+  },
+  {
+   "branch": "wounded_alarm_unclear",
+   "votes": {
+    "raise_alarm": 1,
+    "drink_potion": 2,
+    "melee_attack": 1,
+    "shoot": 2,
+    "retreat": 1
+   }
+  },
+  {
+   "branch": "orc_alarm_unclear",
+   "votes": {
+    "shoot": 1,
+    "hold_position": 2,
+    "raise_alarm": 3
+   }
+  },
+  {
+   "branch": "hp_ambiguous",
+   "votes": {
+    "shoot": 1,
+    "raise_alarm": 1
+   }
+  },
+  {
+   "branch": "mage_no_arrows",
+   "votes": {
+    "melee_attack": 2,
+    "drink_potion": 1,
+    "hold_position": 1
+   }
+  }
+ ],
+ "rounds": {
+  "1": {
+   "sessions": [
+    "round1_s1",
+    "round1_s2",
+    "round1_s3"
+   ],
+   "abstain": 90,
+   "audit": 30,
+   "replicas": 0,
+   "settled_branches": []
+  },
+  "2": {
+   "sessions": [
+    "round2_s1",
+    "round2_s2",
+    "round2_s3"
+   ],
+   "abstain": 88,
+   "audit": 32,
+   "replicas": 8,
+   "settled_branches": []
+  },
+  "3": {
+   "sessions": [
+    "round3_s1",
+    "round3_s2",
+    "round3_s3"
+   ],
+   "abstain": 46,
+   "audit": 25,
+   "replicas": 8,
+   "settled_branches": [
+    "horde_alarm",
+    "hurt_retreat",
+    "melee_adjacent",
+    "night_no_arrows_cover",
+    "no_arrows_hold",
+    "no_threat_hold",
+    "orc_pair_night_alarm",
+    "troll_shoot_allies",
+    "wounded_drink"
+   ]
+  },
+  "4": {
+   "sessions": [
+    "round4_s1",
+    "round4_s2",
+    "round4_s3"
+   ],
+   "abstain": 19,
+   "audit": 34,
+   "replicas": 8,
+   "settled_branches": [
+    "horde_alarm",
+    "hurt_drink",
+    "hurt_retreat",
+    "mage_melee",
+    "melee_adjacent",
+    "no_arrows_hold",
+    "no_threat_hold",
+    "orc_pair_night_alarm",
+    "troll_shoot_allies",
+    "wounded_alarm",
+    "wounded_drink"
+   ]
+  },
+  "5": {
+   "sessions": [
+    "round5_s1",
+    "round5_s2",
+    "round5_s3"
+   ],
+   "abstain": 27,
+   "audit": 21,
+   "replicas": 8,
+   "settled_branches": [
+    "horde_alarm",
+    "hurt_drink",
+    "hurt_retreat",
+    "mage_far_alarm",
+    "mage_melee",
+    "mage_shoot",
+    "melee_adjacent",
+    "no_arrows_hold",
+    "no_threat_hold",
+    "orc_pair_night_alarm",
+    "troll_shoot_allies",
+    "wounded_alarm"
+   ]
+  }
+ },
+ "amended_branches": [],
+ "brief": "/home/claude/sekizui/jit/auto_runs/r2/briefs/compile_5.md",
+ "asked": [
+  "s4-0073",
+  "s4-0474",
+  "s4-0339",
+  "s4-0213",
+  "s4-0252",
+  "s4-0006",
+  "s4-0167",
+  "s4-0464",
+  "s4-0474",
+  "s4-0021",
+  "s4-0271",
+  "s4-0358",
+  "s4-0373",
+  "s4-0111",
+  "s4-0357",
+  "s4-0044",
+  "s4-0021",
+  "s4-0456",
+  "s4-0365",
+  "s4-0390",
+  "s4-0427",
+  "s4-0530",
+  "s4-0815",
+  "s4-0989",
+  "s4-0082",
+  "s4-0134",
+  "s4-0030",
+  "s4-0724",
+  "s4-0866",
+  "s4-0769",
+  "s4-0662",
+  "s4-0772",
+  "s4-0635",
+  "s4-0939",
+  "s4-0559",
+  "s4-0771",
+  "s4-1036",
+  "s4-1197",
+  "s4-0568",
+  "s4-0537"
+ ],
+ "settled_now": {
+  "mild_no_threat_hold": [
+   "s4-0866"
+  ],
+  "hurt_no_threat": [
+   "s4-0662",
+   "s4-0772"
+  ]
+ },
+ "amended_ids": [
+  "s4-0339",
+  "s4-0373",
+  "s4-0044",
+  "s4-0021",
+  "s4-0390",
+  "s4-0427",
+  "s4-0530",
+  "s4-0815",
+  "s4-0866",
+  "s4-0662",
+  "s4-0772"
+ ]
+}

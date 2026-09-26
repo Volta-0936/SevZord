@@ -1,0 +1,3 @@
+numpy>=1.24
+# 模型との比べ(final_eval.py、auto_eval.py の一部)にだけ使う
+scikit-learn>=1.3

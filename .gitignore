@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+# 鍵は絶対に入れない
+typesafe_key.txt
+.typesafe_key
+*.key
+.env
+# 再生成できる大きな結果(run_all.py で作り直せる)
+*.npz
+logs/
+# Jev の生の出力(鍵があれば jev_compare.py で作り直せる)
+jit/jev_holdout2*.json
+jit/jev_result*.txt
+jit/jev_run.log
+# 試しに回した走り
+jit/auto_runs/check_*/

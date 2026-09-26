@@ -1,0 +1,54 @@
+{
+ "run": "r1",
+ "stream_seed": 4,
+ "phase": "done",
+ "accepted": [
+  "a0",
+  "a1",
+  "a2",
+  "a3",
+  "a4",
+  "a5"
+ ],
+ "gate_log": [
+  {
+   "version": "a0",
+   "retry": 0,
+   "problems": []
+  },
+  {
+   "version": "a1",
+   "retry": 0,
+   "problems": []
+  },
+  {
+   "version": "a2",
+   "retry": 0,
+   "problems": []
+  },
+  {
+   "version": "a3",
+   "retry": 0,
+   "problems": []
+  },
+  {
+   "version": "a4",
+   "retry": 0,
+   "problems": []
+  },
+  {
+   "version": "a5",
+   "retry": 0,
+   "problems": []
+  }
+ ],
+ "log": [
+  "第1周: 審判へ 120 件(棄権から 89、監査 31)。棄権は 193 件あり、上限 120 のため棄権を無作為に間引いた",
+  "第2周: 審判へ 94 件(棄権 49、監査 45)",
+  "第3周: 審判へ 67 件(棄権 19、監査 48)",
+  "第4周: 審判へ 63 件(棄権 14、監査 49)",
+  "第5周: 審判へ 61 件(棄権 12、監査 49)"
+ ],
+ "retry": 0,
+ "brief": "/home/claude/sekizui/jit/auto_runs/r1/briefs/compile_5.md"
+}

@@ -1,0 +1,409 @@
+{
+ "run": "r3",
+ "stream_seed": 4,
+ "phase": "done",
+ "accepted": [
+  "c0",
+  "c1",
+  "c2",
+  "c3",
+  "c4",
+  "c5"
+ ],
+ "gate_log": [
+  {
+   "version": "c0",
+   "retry": 0,
+   "problems": []
+  },
+  {
+   "version": "c1",
+   "retry": 0,
+   "problems": []
+  },
+  {
+   "version": "c2",
+   "retry": 0,
+   "problems": []
+  },
+  {
+   "version": "c3",
+   "retry": 0,
+   "problems": []
+  },
+  {
+   "version": "c4",
+   "retry": 0,
+   "problems": [
+    "反証された枝: 枝 wounded_cover_day は例 4 件のうち 3 件しか一致しない"
+   ]
+  },
+  {
+   "version": "c4",
+   "retry": 1,
+   "problems": []
+  },
+  {
+   "version": "c5",
+   "retry": 0,
+   "problems": []
+  }
+ ],
+ "log": [
+  "第1周: 審判へ 120 件(棄権 90、監査 30)を会話 3 本に分け、訊き直し 0 件を 2 会話ずつに入れた",
+  "第1周: 票が割れて 2/3 が揃った状態 0 件(枝ごと {})、2 件以上たまった枝 []、揃わず再度 0 件、次の周に訊き直す 6 件",
+  "第2周: 審判へ 120 件(棄権 88、監査 32)を会話 3 本に分け、訊き直し 6 件を 2 会話ずつに入れた",
+  "第2周: 票が割れて 2/3 が揃った状態 3 件(枝ごと {'hp_ambiguous': 2, 'orc_alarm_unclear': 1})、2 件以上たまった枝 ['hp_ambiguous']、揃わず再度 0 件、次の周に訊き直す 6 件",
+  "(訂正) 第2周: 穴を「枝」だけで分けていたため、同じ枝に多数の答えが違う正の例(hold と retreat)が一つずつ混ざったまま編集役へ回りかけた。穴を「枝と多数の行動の組」に改め、編集の前に止めた(edit_2.md は edit_2_discarded.md)",
+  "第2周: 票が割れて 2/3 が揃った状態 3 件(枝ごと {'hp_ambiguous::hold_position': 1, 'hp_ambiguous::retreat': 1, 'orc_alarm_unclear::raise_alarm': 1})、2 件以上たまった枝 []、揃わず再度 0 件、次の周に訊き直す 6 件",
+  "第3周: 審判へ 57 件(棄権 40、監査 17)を会話 2 本に分け、訊き直し 6 件を 2 会話ずつに入れた",
+  "第3周: 票が割れて 2/3 が揃った状態 4 件(枝ごと {'wounded_alone::hold_position': 1, 'hp_ambiguous::retreat': 1, 'wounded_vs_alarm::raise_alarm': 1, 'orc_alarm_unclear::raise_alarm': 1})、2 件以上たまった枝 []、揃わず再度 0 件、次の周に訊き直す 6 件",
+  "第4周: 審判へ 41 件(棄権 12、監査 29)を会話 2 本に分け、訊き直し 6 件を 2 会話ずつに入れた",
+  "第4周: 票が割れて 2/3 が揃った状態 4 件(枝ごと {'wounded_alone_hold::hold_position': 1, 'hp_ambiguous::retreat': 1, 'wounded_vs_alarm::raise_alarm': 1, 'orc_alarm_unclear::raise_alarm': 1})、2 件以上たまった枝 []、揃わず再度 0 件、次の周に訊き直す 6 件",
+  "第5周: 審判へ 31 件(棄権 17、監査 14)を会話 2 本に分け、訊き直し 6 件を 2 会話ずつに入れた",
+  "第5周: 票が割れて 2/3 が揃った状態 7 件(枝ごと {'wounded_alone_hold::hold_position': 1, 'hp_ambiguous::retreat': 1, 'wounded_vs_alarm::raise_alarm': 1, 'orc_alarm_unclear::raise_alarm': 2, 'no_arrows_cover_day::hold_position': 2})、2 件以上たまった枝 ['no_arrows_cover_day::hold_position', 'orc_alarm_unclear::raise_alarm']、揃わず再度 1 件、次の周に訊き直す 6 件",
+  "第5周の追補: A1 オーク三体以上、または味方の無いまま夜か矢四本以下で向き合うオーク二体は深刻な脅威であり、ひどく傷ついていなければ、警報がまだなら鳴らす。 / A2 昼に矢が尽きても、遮蔽があり、離れた小鬼かオークが二体までなら、ひどく傷ついていない限り持ち場で待ち構える(A1 で警報を鳴らす時を除く)。"
+ ],
+ "retry": 0,
+ "amendments": [
+  {
+   "id": "A1",
+   "text": "オーク三体以上、または味方の無いまま夜か矢四本以下で向き合うオーク二体は深刻な脅威であり、ひどく傷ついていなければ、警報がまだなら鳴らす。",
+   "when": "s['enemy'] == 'orc' and not s['alarm'] and s['hp'] > 36 and (s['enemy_count'] >= 3 or (s['enemy_count'] >= 2 and s['allies'] == 0 and (s['time'] == 'night' or s['arrows'] <= 4)))",
+   "action": "raise_alarm",
+   "branch": "orc_alarm_unclear::raise_alarm",
+   "round": 5,
+   "positives": [
+    "s4-0006",
+    "s4-1309"
+   ],
+   "report": {
+    "covered_labeled_states": 19,
+    "covered_instances": 29,
+    "agree": 26,
+    "inner_instances": 27,
+    "inner_agree": 25,
+    "covered_stream_states": 55
+   }
+  },
+  {
+   "id": "A2",
+   "text": "昼に矢が尽きても、遮蔽があり、離れた小鬼かオークが二体までなら、ひどく傷ついていない限り持ち場で待ち構える(A1 で警報を鳴らす時を除く)。",
+   "when": "s['arrows'] == 0 and s['cover'] and s['time'] == 'day' and s['enemy'] in ('goblin', 'orc') and s['distance'] >= 2 and s['enemy_count'] <= 2 and s['hp'] > 36 and not (s['enemy'] == 'orc' and not s['alarm'] and s['enemy_count'] >= 2 and s['allies'] == 0)",
+   "action": "hold_position",
+   "branch": "no_arrows_cover_day::hold_position",
+   "round": 5,
+   "positives": [
+    "s4-0635",
+    "s4-1287"
+   ],
+   "report": {
+    "covered_labeled_states": 17,
+    "covered_instances": 33,
+    "agree": 29,
+    "inner_instances": 33,
+    "inner_agree": 29,
+    "covered_stream_states": 36
+   }
+  }
+ ],
+ "replicate": [
+  "s4-0939",
+  "s4-0626",
+  "s4-0993",
+  "s4-0860",
+  "s4-1298",
+  "s4-1095"
+ ],
+ "pending": [
+  {
+   "branch": "wounded_retreat",
+   "votes": {
+    "retreat": 11,
+    "shoot": 1
+   }
+  },
+  {
+   "branch": "wounded_alone_hold",
+   "votes": {
+    "hold_position": 7,
+    "retreat": 1
+   }
+  },
+  {
+   "branch": "hp_ambiguous",
+   "votes": {
+    "shoot": 2,
+    "retreat": 8,
+    "hold_position": 1
+   }
+  },
+  {
+   "branch": "no_arrows_cover_day",
+   "votes": {
+    "hold_position": 29,
+    "take_cover": 2,
+    "raise_alarm": 1
+   }
+  },
+  {
+   "branch": "wounded_vs_alarm",
+   "votes": {
+    "raise_alarm": 2,
+    "drink_potion": 2,
+    "melee_attack": 1
+   }
+  },
+  {
+   "branch": "mage_alarm",
+   "votes": {
+    "raise_alarm": 15,
+    "shoot": 1
+   }
+  },
+  {
+   "branch": "troll_no_arrows",
+   "votes": {
+    "hold_position": 2,
+    "take_cover": 3,
+    "retreat": 1
+   }
+  },
+  {
+   "branch": "worn_cover_day",
+   "votes": {
+    "take_cover": 4,
+    "hold_position": 1,
+    "retreat": 1
+   }
+  },
+  {
+   "branch": "orc_alarm_unclear",
+   "votes": {
+    "raise_alarm": 10,
+    "shoot": 2,
+    "melee_attack": 4,
+    "retreat": 1
+   }
+  },
+  {
+   "branch": "orc_night_alarm",
+   "votes": {
+    "raise_alarm": 9,
+    "shoot": 1
+   }
+  },
+  {
+   "branch": "no_arrows_cover",
+   "votes": {
+    "hold_position": 4,
+    "take_cover": 10,
+    "raise_alarm": 2,
+    "drink_potion": 1
+   }
+  },
+  {
+   "branch": "mage_no_arrows",
+   "votes": {
+    "hold_position": 3,
+    "drink_potion": 1
+   }
+  },
+  {
+   "branch": "weak_mage_unclear",
+   "votes": {
+    "raise_alarm": 2,
+    "shoot": 1
+   }
+  }
+ ],
+ "rounds": {
+  "1": {
+   "sessions": [
+    "round1_s1",
+    "round1_s2",
+    "round1_s3"
+   ],
+   "abstain": 90,
+   "audit": 30,
+   "replicas": 0,
+   "settled_branches": []
+  },
+  "2": {
+   "sessions": [
+    "round2_s1",
+    "round2_s2",
+    "round2_s3"
+   ],
+   "abstain": 88,
+   "audit": 32,
+   "replicas": 6,
+   "settled_branches": []
+  },
+  "3": {
+   "sessions": [
+    "round3_s1",
+    "round3_s2"
+   ],
+   "abstain": 40,
+   "audit": 17,
+   "replicas": 6,
+   "settled_branches": [
+    "horde_alarm",
+    "hurt_no_threat_retreat",
+    "melee_adjacent",
+    "no_arrows_cover_day",
+    "no_arrows_hold",
+    "no_threat_hold",
+    "shoot_far",
+    "troll_shoot_allied",
+    "wounded_drink"
+   ]
+  },
+  "4": {
+   "sessions": [
+    "round4_s1",
+    "round4_s2"
+   ],
+   "abstain": 12,
+   "audit": 29,
+   "replicas": 6,
+   "settled_branches": [
+    "horde_alarm",
+    "hurt_no_threat_retreat",
+    "mage_melee_first",
+    "melee_adjacent",
+    "night_alone_cover",
+    "no_arrows_cover_day",
+    "no_arrows_hold",
+    "no_threat_hold",
+    "shoot_far",
+    "troll_alone_retreat",
+    "troll_shoot_allied",
+    "wounded_drink"
+   ]
+  },
+  "5": {
+   "sessions": [
+    "round5_s1",
+    "round5_s2"
+   ],
+   "abstain": 17,
+   "audit": 14,
+   "replicas": 6,
+   "settled_branches": [
+    "horde_alarm",
+    "hurt_drink",
+    "hurt_no_threat_retreat",
+    "mage_melee_first",
+    "melee_adjacent",
+    "near_fine_hold",
+    "night_alone_cover",
+    "no_arrows_cover_day",
+    "no_arrows_hold",
+    "no_threat_hold",
+    "orc_pair_melee_allied",
+    "shoot_far",
+    "troll_alarm",
+    "troll_alone_retreat",
+    "troll_shoot_allied",
+    "weak_mage_shoot",
+    "wounded_drink"
+   ]
+  }
+ },
+ "amended_ids": [
+  "s4-0006",
+  "s4-1309",
+  "s4-0635",
+  "s4-1287"
+ ],
+ "asked": [
+  "s4-0073",
+  "s4-0474",
+  "s4-0339",
+  "s4-0213",
+  "s4-0252",
+  "s4-0006",
+  "s4-0021",
+  "s4-0271",
+  "s4-0358",
+  "s4-0464",
+  "s4-0373",
+  "s4-0111",
+  "s4-0454",
+  "s4-0363",
+  "s4-0770",
+  "s4-0357",
+  "s4-0390",
+  "s4-0030",
+  "s4-0939",
+  "s4-0635",
+  "s4-0559",
+  "s4-1054",
+  "s4-1309",
+  "s4-1287",
+  "s4-0939",
+  "s4-0626",
+  "s4-0993",
+  "s4-0860",
+  "s4-1298",
+  "s4-1095"
+ ],
+ "brief": "/home/claude/sekizui/jit/auto_runs/r3/briefs/compile_5.md",
+ "amend_gate_log": [
+  {
+   "round": 5,
+   "retry": 0,
+   "branch": "orc_alarm_unclear::raise_alarm",
+   "text": "オーク三体以上、または味方の無いまま夜か矢四本以下で向き合うオーク二体は深刻な脅威であり、ひどく傷ついていなければ、警報がまだなら鳴らす。",
+   "when": "s['enemy'] == 'orc' and not s['alarm'] and s['hp'] > 36 and (s['enemy_count'] >= 3 or (s['enemy_count'] >= 2 and s['allies'] == 0 and (s['time'] == 'night' or s['arrows'] <= 4)))",
+   "action": "raise_alarm",
+   "problems": [],
+   "report": {
+    "covered_labeled_states": 19,
+    "covered_instances": 29,
+    "agree": 26,
+    "inner_instances": 27,
+    "inner_agree": 25,
+    "covered_stream_states": 55
+   }
+  },
+  {
+   "round": 5,
+   "retry": 0,
+   "branch": "no_arrows_cover_day::hold_position",
+   "text": "昼に矢が無く遮蔽もあるとき、ひどく傷ついておらず、敵が二マス以上離れた四体以下の小鬼かオークなら、警報を先にすべき場合を除き、持ち場で接近を待つ。",
+   "when": "s['time'] == 'day' and s['cover'] and s['arrows'] == 0 and (s['enemy'] == 'goblin' or s['enemy'] == 'orc') and s['distance'] >= 2 and s['enemy_count'] <= 4 and s['hp'] > 36 and (s['alarm'] or s['enemy'] == 'goblin' or s['enemy_count'] <= 1 or (s['enemy_count'] == 2 and s['allies'] >= 1))",
+   "action": "hold_position",
+   "problems": [
+    "訊き直しで {'take_cover': 3} だった状態を覆っている: hp=42 enemy=goblin distance=4 enemy_count=3 enemy_hp=60 allies=3 potion=False arrows=0 cover=True alarm=True post=gate time=day"
+   ],
+   "report": {
+    "covered_labeled_states": 19,
+    "covered_instances": 37,
+    "agree": 30,
+    "inner_instances": 37,
+    "inner_agree": 30,
+    "covered_stream_states": 48
+   }
+  },
+  {
+   "round": 5,
+   "retry": 1,
+   "branch": "no_arrows_cover_day::hold_position",
+   "text": "昼に矢が尽きても、遮蔽があり、離れた小鬼かオークが二体までなら、ひどく傷ついていない限り持ち場で待ち構える(A1 で警報を鳴らす時を除く)。",
+   "when": "s['arrows'] == 0 and s['cover'] and s['time'] == 'day' and s['enemy'] in ('goblin', 'orc') and s['distance'] >= 2 and s['enemy_count'] <= 2 and s['hp'] > 36 and not (s['enemy'] == 'orc' and not s['alarm'] and s['enemy_count'] >= 2 and s['allies'] == 0)",
+   "action": "hold_position",
+   "problems": [],
+   "report": {
+    "covered_labeled_states": 17,
+    "covered_instances": 33,
+    "agree": 29,
+    "inner_instances": 33,
+    "inner_agree": 29,
+    "covered_stream_states": 36
+   }
+  }
+ ]
+}

@@ -1,0 +1,204 @@
+{
+ "n": 200,
+ "consensus": 199,
+ "unanimous": 186,
+ "gap_states": 36,
+ "policies": {
+  "P6": {
+   "coverage": 0.995,
+   "agree_consensus": 0.9141414141414141,
+   "agree_unanimous": 0.9351351351351351,
+   "agree_gap": 0.7941176470588235,
+   "n_gap_covered": 34,
+   "agree_plain": 0.8994974874371859,
+   "system_consensus": 0.914572864321608,
+   "us": 0.6067300000722753
+  },
+  "r1:a0": {
+   "coverage": 0.61,
+   "agree_consensus": 1.0,
+   "agree_unanimous": 1.0,
+   "agree_gap": 1.0,
+   "n_gap_covered": 1,
+   "agree_plain": 1.0,
+   "system_consensus": 1.0,
+   "us": 1.3209450003159873
+  },
+  "r1:a1": {
+   "coverage": 0.93,
+   "agree_consensus": 0.9459459459459459,
+   "agree_unanimous": 0.9712643678160919,
+   "agree_gap": 0.7419354838709677,
+   "n_gap_covered": 31,
+   "agree_plain": 0.9408602150537635,
+   "system_consensus": 0.949748743718593,
+   "us": 1.261959998828388
+  },
+  "r1:a2": {
+   "coverage": 0.94,
+   "agree_consensus": 0.9197860962566845,
+   "agree_unanimous": 0.9428571428571428,
+   "agree_gap": 0.7647058823529411,
+   "n_gap_covered": 34,
+   "agree_plain": 0.9202127659574468,
+   "system_consensus": 0.9246231155778895,
+   "us": 1.2212950014145463
+  },
+  "r1:a3": {
+   "coverage": 0.97,
+   "agree_consensus": 0.9222797927461139,
+   "agree_unanimous": 0.95,
+   "agree_gap": 0.7428571428571429,
+   "n_gap_covered": 35,
+   "agree_plain": 0.9175257731958762,
+   "system_consensus": 0.9246231155778895,
+   "us": 1.1474550001366879
+  },
+  "r1:a4": {
+   "coverage": 0.98,
+   "agree_consensus": 0.9128205128205128,
+   "agree_unanimous": 0.9395604395604396,
+   "agree_gap": 0.7428571428571429,
+   "n_gap_covered": 35,
+   "agree_plain": 0.9081632653061225,
+   "system_consensus": 0.914572864321608,
+   "us": 1.1662450015137438
+  },
+  "r1:a5": {
+   "coverage": 0.98,
+   "agree_consensus": 0.9128205128205128,
+   "agree_unanimous": 0.9395604395604396,
+   "agree_gap": 0.7428571428571429,
+   "n_gap_covered": 35,
+   "agree_plain": 0.9081632653061225,
+   "system_consensus": 0.914572864321608,
+   "us": 1.358120000531926
+  },
+  "r2:b0": {
+   "coverage": 0.5,
+   "agree_consensus": 0.99,
+   "agree_unanimous": 0.99,
+   "agree_gap": 0.5,
+   "n_gap_covered": 2,
+   "agree_plain": 1.0,
+   "system_consensus": 0.9949748743718593,
+   "us": 2.774330000647751
+  },
+  "r2:b1": {
+   "coverage": 0.825,
+   "agree_consensus": 0.9818181818181818,
+   "agree_unanimous": 0.9875776397515528,
+   "agree_gap": 0.7857142857142857,
+   "n_gap_covered": 14,
+   "agree_plain": 0.9757575757575757,
+   "system_consensus": 0.9849246231155779,
+   "us": 2.8178499997011386
+  },
+  "r2:b2": {
+   "coverage": 0.94,
+   "agree_consensus": 0.9786096256684492,
+   "agree_unanimous": 0.9888888888888889,
+   "agree_gap": 0.8846153846153846,
+   "n_gap_covered": 26,
+   "agree_plain": 0.9468085106382979,
+   "system_consensus": 0.9798994974874372,
+   "us": 2.788650001548376
+  },
+  "r2:b3": {
+   "coverage": 0.97,
+   "agree_consensus": 0.9689119170984456,
+   "agree_unanimous": 0.9836956521739131,
+   "agree_gap": 0.8333333333333334,
+   "n_gap_covered": 30,
+   "agree_plain": 0.9381443298969072,
+   "system_consensus": 0.9698492462311558,
+   "us": 3.0017599988241273
+  },
+  "r2:b4": {
+   "coverage": 0.97,
+   "agree_consensus": 0.9689119170984456,
+   "agree_unanimous": 0.9836956521739131,
+   "agree_gap": 0.8333333333333334,
+   "n_gap_covered": 30,
+   "agree_plain": 0.9381443298969072,
+   "system_consensus": 0.9698492462311558,
+   "us": 3.3712649997141853
+  },
+  "r2:b5": {
+   "coverage": 0.985,
+   "agree_consensus": 0.9591836734693877,
+   "agree_unanimous": 0.9837837837837838,
+   "agree_gap": 0.7878787878787878,
+   "n_gap_covered": 33,
+   "agree_plain": 0.9390862944162437,
+   "system_consensus": 0.9597989949748744,
+   "us": 2.9833500002496294
+  },
+  "r3:c0": {
+   "coverage": 0.5,
+   "agree_consensus": 0.99,
+   "agree_unanimous": 0.99,
+   "agree_gap": 0.5,
+   "n_gap_covered": 2,
+   "agree_plain": 1.0,
+   "system_consensus": 0.9949748743718593,
+   "us": 2.8047649993823143
+  },
+  "r3:c1": {
+   "coverage": 0.825,
+   "agree_consensus": 0.9818181818181818,
+   "agree_unanimous": 0.9875776397515528,
+   "agree_gap": 0.7857142857142857,
+   "n_gap_covered": 14,
+   "agree_plain": 0.9757575757575757,
+   "system_consensus": 0.9849246231155779,
+   "us": 2.6939400004266645
+  },
+  "r3:c2": {
+   "coverage": 0.955,
+   "agree_consensus": 0.9789473684210527,
+   "agree_unanimous": 0.988950276243094,
+   "agree_gap": 0.8620689655172413,
+   "n_gap_covered": 29,
+   "agree_plain": 0.9633507853403142,
+   "system_consensus": 0.9798994974874372,
+   "us": 2.9644250003002526
+  },
+  "r3:c3": {
+   "coverage": 0.98,
+   "agree_consensus": 0.9846153846153847,
+   "agree_unanimous": 0.9945945945945946,
+   "agree_gap": 0.9090909090909091,
+   "n_gap_covered": 33,
+   "agree_plain": 0.9540816326530612,
+   "system_consensus": 0.9849246231155779,
+   "us": 3.4824799990929023
+  },
+  "r3:c4": {
+   "coverage": 0.98,
+   "agree_consensus": 0.9846153846153847,
+   "agree_unanimous": 0.9945945945945946,
+   "agree_gap": 0.9090909090909091,
+   "n_gap_covered": 33,
+   "agree_plain": 0.9540816326530612,
+   "system_consensus": 0.9849246231155779,
+   "us": 3.0486550008390623
+  },
+  "r3:c5": {
+   "coverage": 0.99,
+   "agree_consensus": 0.9746192893401016,
+   "agree_unanimous": 0.9945945945945946,
+   "agree_gap": 0.9090909090909091,
+   "n_gap_covered": 33,
+   "agree_plain": 0.9444444444444444,
+   "system_consensus": 0.9748743718592965,
+   "us": 3.1924349991641066
+  }
+ },
+ "judge_loo": [
+  0.9789473684210527,
+  0.9637305699481865,
+  0.9893617021276596
+ ],
+ "plain_vs_consensus": 0.949748743718593
+}

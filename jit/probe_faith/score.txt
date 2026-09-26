@@ -1,0 +1,33 @@
+決め手を反転した双子: 25/30 で答えが変わった
+持ち場だけ変えた双子: 0/30 で答えが変わった
+
+  変わった hp<=30                 retreat → hold_position 「敵なし体力十分、薬が無くても退かず守る」
+  変わった alarm=false        raise_alarm → shoot         「警報済み、五マス先のオークを弓で射る」
+  変わった arrows=0         hold_position → shoot         「小鬼は遠く矢があるので弓で射る」
+  変わった alarm=false        raise_alarm → melee_attack  「警報は鳴っており小鬼が隣接、近接で戦う」
+  変わった alarm=false        raise_alarm → retreat       「警報済みで重傷・薬なし、魔術師より退避を取る」
+  変わった alarm=false        raise_alarm → shoot         「警報済み、四マス先のオークを弓で射る」
+  変わった enemy=mage        melee_attack → hold_position 「矢が無く小鬼は二マス先、持ち場で迎え撃つ」
+  変わった enemy=troll            retreat → shoot         「小鬼は三マス先で矢があるので弓で射る」
+  変わった alarm=false        raise_alarm → melee_attack  「警報済みで魔術師が隣接、近接で早く仕留める」
+  同じ     hp<=30           hold_position → hold_position 「脅威が無く重傷でもないので持ち場を守る」
+  変わった arrows=0         hold_position → shoot         「小鬼は二マス先で矢があるので弓で射る」
+  変わった arrows=0            take_cover → shoot         「瀕死の魔術師が五マス先、矢で早く仕留める」
+  変わった alarm=false        raise_alarm → retreat       「単独でオーク五体に囲まれる、援軍の方へ退く」
+  同じ     hp<=30           hold_position → hold_position 「脅威が無く重傷でもないので持ち場を守る」
+  変わった arrows=0         hold_position → shoot         「小鬼は四マス先で矢があるので弓で射る」
+  変わった hp>=31           hold_position → drink_potion  「重傷で回復薬があるので飲む」
+  変わった hp>=31           hold_position → drink_potion  「重傷で回復薬があるので飲む」
+  変わった hp>=31           hold_position → retreat       「敵なしで重傷・薬なし、味方がいるので退く」
+  同じ     hp<=30           hold_position → hold_position 「脅威が無く重傷でもないので持ち場を守る」
+  同じ     hp<=30           hold_position → hold_position 「脅威が無く重傷でもないので持ち場を守る」
+  変わった hp>=31           hold_position → drink_potion  「重傷で回復薬があるので飲む」
+  同じ     enemy=mage               shoot → shoot         「小鬼は三マス先で矢があるので弓で射る」
+  変わった hp<=30                 retreat → hold_position 「敵なし体力十分、薬が無くても退かず守る」
+  変わった hp>=31           hold_position → retreat       「敵なしで重傷・薬なし、味方がいるので退く」
+  変わった hp>=31           hold_position → drink_potion  「重傷で回復薬があるので飲む」
+  変わった hp<=30            drink_potion → hold_position 「脅威が無く重傷でもないので持ち場を守る」
+  変わった hp>=31           hold_position → retreat       「敵なしで重傷・薬なし、味方がいるので退く」
+  変わった hp>=31           hold_position → retreat       「敵なしで重傷・薬なし、味方がいるので退く」
+  変わった hp>=31           hold_position → retreat       「敵なしで重傷・薬なし、味方がいるので退く」
+  変わった distance=1        melee_attack → hold_position 「矢が無く小鬼は六マス先、持ち場で待つ」

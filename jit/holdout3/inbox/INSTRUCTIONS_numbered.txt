@@ -1,0 +1,11 @@
+L0 城の番兵NPCの、このターンの行動を一つ選ぶ。番兵は忠実だが、無駄死にはしない。門を守りつつ生き延びること。
+L1 ひどく傷ついているなら、回復薬があれば飲み、なければ退く。
+L2 敵が離れていて矢が残っていれば弓で射る。隣接していれば近接で戦う。
+L3 トロルは一人で相手にするには強すぎる。
+L4 魔術師は早く仕留めるべきだ。
+L5 警報がまだ鳴っておらず、深刻な脅威が現れたなら警報を鳴らす。
+L6 夜は用心深く。
+L7 脅威が無ければ持ち場を守る。
+
+行動: melee_attack(近接攻撃), shoot(弓で射る), retreat(退く), drink_potion(回復薬を飲む), take_cover(遮蔽に隠れる), raise_alarm(警報を鳴らす), hold_position(持ち場を守る)
+状態の項目: hp(番兵の体力 0-100), enemy(最も近い敵の種類: none/goblin/orc/mage/troll), distance(その敵までのマス数、敵がいなければ null), enemy_count(見えている敵の数), enemy_hp(最も近い敵の体力 %), allies(近くの味方の数), potion(回復薬を持っているか), arrows(矢の残り), cover(近くに遮蔽物があるか), alarm(警報が既に鳴っているか), post(持ち場: gate/wall/corridor), time(day/night)

@@ -1,0 +1,17 @@
+{
+  "amendments": [
+    {
+      "branch": "orc_alarm_unclear::raise_alarm",
+      "action": "raise_alarm",
+      "when": "s['enemy'] == 'orc' and not s['alarm'] and s['hp'] > 36 and (s['enemy_count'] >= 3 or (s['enemy_count'] >= 2 and s['allies'] == 0 and (s['time'] == 'night' or s['arrows'] <= 4)))",
+      "text": "オーク三体以上、または味方の無いまま夜か矢四本以下で向き合うオーク二体は深刻な脅威であり、ひどく傷ついていなければ、警報がまだなら鳴らす。"
+    },
+    {
+      "branch": "no_arrows_cover_day::hold_position",
+      "action": "hold_position",
+      "when": "s['time'] == 'day' and s['cover'] and s['arrows'] == 0 and (s['enemy'] == 'goblin' or s['enemy'] == 'orc') and s['distance'] >= 2 and s['enemy_count'] <= 4 and s['hp'] > 36 and (s['alarm'] or s['enemy'] == 'goblin' or s['enemy_count'] <= 1 or (s['enemy_count'] == 2 and s['allies'] >= 1))",
+      "text": "昼に矢が無く遮蔽もあるとき、ひどく傷ついておらず、敵が二マス以上離れた四体以下の小鬼かオークなら、警報を先にすべき場合を除き、持ち場で接近を待つ。"
+    }
+  ],
+  "skip": []
+}

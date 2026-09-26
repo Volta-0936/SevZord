@@ -1,0 +1,11 @@
+Choose one action for a castle guard NPC this turn. The guard is loyal but not suicidal: protect the gate while staying alive.
+- If badly hurt: drink a potion if you have one, otherwise retreat.
+- If the enemy is at a distance and arrows remain, shoot with the bow. If adjacent, fight in melee.
+- Trolls are too strong to fight alone.
+- Mages should be taken down quickly.
+- If the alarm has not been raised yet and a serious threat appears, raise the alarm.
+- Be more cautious at night.
+- If there is no threat, hold position.
+
+Actions: melee_attack (attack in melee), shoot (shoot with the bow), retreat, drink_potion (drink a healing potion), take_cover (hide behind cover), raise_alarm, hold_position
+State fields: hp (guard's health 0-100), enemy (type of the nearest enemy: none/goblin/orc/mage/troll), distance (tiles to that enemy, null if there is none), enemy_count (number of visible enemies), enemy_hp (nearest enemy's health in %), allies (number of allies nearby), potion (whether the guard has a healing potion), arrows (arrows left), cover (whether cover is nearby), alarm (whether the alarm has already been raised), post (gate/wall/corridor), time (day/night)

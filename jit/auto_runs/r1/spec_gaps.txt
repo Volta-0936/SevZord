@@ -1,0 +1,87 @@
+方針 a5 の枝で、審判の答えが 90% 未満しか揃わない所(会話 22 本、答え 1902 件)
+
+■ no_arrows_hold  141 件  {'hold_position': 106, 'retreat': 2, 'take_cover': 27, 'melee_attack': 2, 'drink_potion': 3, 'raise_alarm': 1}  多数の割合 0.75
+   一つの項目で分けると 0.78  (enemy=mage → take_cover / 他 → hold_position)
+   同じ会話の他の答えで当てると 0.68  (当てられた 138 件)
+   会話ごと: 手:consistency {'hold_position': 2}; 手:holdout2_0 {'hold_position': 7, 'retreat': 1}; 手:holdout2_1 {'take_cover': 2, 'hold_position': 2}; 手:holdout2_2 {'take_cover': 2, 'hold_position': 3}; 手:holdout_0 {'hold_position': 7, 'take_cover': 1}; 手:holdout_1 {'hold_position': 4, 'take_cover': 1}; 手:holdout_2 {'hold_position': 6}; 手:iid_0 {'hold_position': 3, 'take_cover': 2}; 手:iid_1 {'hold_position': 5, 'take_cover': 1}; 手:iid_2 {'hold_position': 3, 'retreat': 1, 'take_cover': 2}; 手:iid_3 {'melee_attack': 1, 'hold_position': 6}; 手:iid_4 {'hold_position': 3, 'take_cover': 4}; 手:round1 {'hold_position': 25, 'drink_potion': 3, 'take_cover': 9}; 手:round2 {'hold_position': 3, 'take_cover': 1}; 手:round3 {'raise_alarm': 1, 'melee_attack': 1}; r1:round1 {'hold_position': 11}; r1:round2 {'hold_position': 8}; r1:round4 {'hold_position': 4}; r1:round5 {'hold_position': 3}
+
+■ alarm_group  110 件  {'raise_alarm': 98, 'melee_attack': 4, 'shoot': 7, 'hold_position': 1}  多数の割合 0.89
+   一つの項目で分けると 0.89  (None)
+   同じ会話の他の答えで当てると 0.85  (当てられた 110 件)
+   会話ごと: 手:consistency {'raise_alarm': 4}; 手:holdout2_0 {'raise_alarm': 9}; 手:holdout2_1 {'raise_alarm': 3, 'melee_attack': 1, 'shoot': 1}; 手:holdout2_2 {'raise_alarm': 4, 'shoot': 1}; 手:holdout_0 {'raise_alarm': 4}; 手:holdout_1 {'raise_alarm': 4, 'melee_attack': 1, 'shoot': 1}; 手:holdout_2 {'raise_alarm': 4}; 手:iid_0 {'raise_alarm': 9}; 手:iid_1 {'raise_alarm': 9}; 手:iid_2 {'raise_alarm': 4}; 手:iid_3 {'melee_attack': 2, 'raise_alarm': 5}; 手:iid_4 {'raise_alarm': 2}; 手:round1 {'raise_alarm': 8}; 手:round2 {'raise_alarm': 4}; 手:round4 {'shoot': 1, 'raise_alarm': 1}; 手:round5 {'raise_alarm': 2, 'shoot': 1}; r1:round1 {'raise_alarm': 10}; r1:round2 {'raise_alarm': 6}; r1:round3 {'hold_position': 1, 'raise_alarm': 3}; r1:round4 {'raise_alarm': 1, 'shoot': 1}; r1:round5 {'raise_alarm': 2, 'shoot': 1}
+
+■ mid_hurt_potion  19 件  {'raise_alarm': 3, 'drink_potion': 10, 'shoot': 5, 'take_cover': 1}  多数の割合 0.53
+   一つの項目で分けると 0.63  (hp<=37 → drink_potion / 他 → raise_alarm)
+   同じ会話の他の答えで当てると 0.50  (当てられた 12 件)
+   会話ごと: 手:holdout2_1 {'drink_potion': 2}; 手:holdout2_2 {'shoot': 1, 'take_cover': 1}; 手:round1 {'drink_potion': 2, 'shoot': 2}; r1:round2 {'drink_potion': 4}
+
+■ hp_mid_no_potion_fight  18 件  {'hold_position': 3, 'take_cover': 2, 'melee_attack': 4, 'shoot': 3, 'retreat': 5, 'raise_alarm': 1}  多数の割合 0.28
+   一つの項目で分けると 0.50  (distance<=1 → melee_attack / 他 → retreat)
+   同じ会話の他の答えで当てると 0.00  (当てられた 6 件)
+   会話ごと: 手:round1 {'shoot': 1, 'retreat': 2}; r1:round5 {'raise_alarm': 1, 'hold_position': 1, 'shoot': 1}
+
+■ mage_adjacent_melee  18 件  {'melee_attack': 16, 'raise_alarm': 2}  多数の割合 0.89
+   一つの項目で分けると 0.89  (None)
+   同じ会話の他の答えで当てると 0.73  (当てられた 11 件)
+   会話ごと: 手:holdout2_1 {'melee_attack': 2}; 手:iid_1 {'melee_attack': 2}; 手:round1 {'melee_attack': 2, 'raise_alarm': 1}; r1:round1 {'melee_attack': 2}; r1:round2 {'melee_attack': 2}
+
+■ mid_potion_no_threat  16 件  {'hold_position': 8, 'drink_potion': 8}  多数の割合 0.50
+   一つの項目で分けると 0.62  (hp<=36 → drink_potion / 他 → hold_position)
+   同じ会話の他の答えで当てると 1.00  (当てられた 8 件)
+   会話ごと: 手:round2 {'drink_potion': 3}; r1:round3 {'hold_position': 2}; r1:round4 {'drink_potion': 3}
+
+■ mage_no_arrows_alarm  15 件  {'raise_alarm': 11, 'melee_attack': 3, 'hold_position': 1}  多数の割合 0.73
+   一つの項目で分けると 0.87  (enemy_hp<=50 → raise_alarm / 他 → melee_attack)
+   同じ会話の他の答えで当てると 1.00  (当てられた 10 件)
+   会話ごと: 手:holdout_0 {'melee_attack': 3}; 手:iid_1 {'raise_alarm': 3}; r1:round1 {'raise_alarm': 4}
+
+■ mid_potion_night_drink  14 件  {'drink_potion': 11, 'hold_position': 3}  多数の割合 0.79
+   一つの項目で分けると 0.86  (hp<=34 → hold_position / 他 → drink_potion)
+   同じ会話の他の答えで当てると 1.00  (当てられた 10 件)
+   会話ごと: 手:holdout2_1 {'drink_potion': 2}; 手:iid_4 {'drink_potion': 2}; 手:round2 {'drink_potion': 2}; r1:round2 {'drink_potion': 4}
+
+■ orc_pair_no_arrows_hold  12 件  {'raise_alarm': 5, 'hold_position': 6, 'take_cover': 1}  多数の割合 0.50
+   一つの項目で分けると 0.83  (hp<=85 → hold_position / 他 → raise_alarm)
+   同じ会話の他の答えで当てると 1.00  (当てられた 5 件)
+   会話ごと: 手:holdout2_0 {'raise_alarm': 2}; r1:round2 {'hold_position': 3}
+
+■ mage_group_day_alarm_silent  12 件  {'raise_alarm': 9, 'shoot': 3}  多数の割合 0.75
+   一つの項目で分けると 0.75  (None)
+   同じ会話の他の答えで当てると 1.00  (当てられた 4 件)
+   会話ごと: 手:round2 {'raise_alarm': 2}; r1:round2 {'shoot': 2}
+
+■ outnumbered_night_shoot  10 件  {'take_cover': 2, 'shoot': 8}  多数の割合 0.80
+   一つの項目で分けると 0.80  (None)
+   同じ会話の他の答えで当てると 1.00  (当てられた 4 件)
+   会話ごと: r1:round1 {'shoot': 2}; r1:round3 {'shoot': 2}
+
+■ orc_pair_day_shoot  8 件  {'shoot': 7, 'raise_alarm': 1}  多数の割合 0.88
+   一つの項目で分けると 0.88  (None)
+   同じ会話の他の答えで当てると 1.00  (当てられた 3 件)
+   会話ごと: r1:round2 {'shoot': 3}
+
+■ orc_pair_adjacent_melee  8 件  {'raise_alarm': 2, 'melee_attack': 6}  多数の割合 0.75
+   一つの項目で分けると 0.88  (enemy_hp<=70 → melee_attack / 他 → raise_alarm)
+   同じ会話の他の答えで当てると 1.00  (当てられた 4 件)
+   会話ごと: 手:iid_0 {'melee_attack': 2}; r1:round3 {'melee_attack': 2}
+
+■ mid_hp_single_fight  8 件  {'shoot': 6, 'melee_attack': 2}  多数の割合 0.75
+   一つの項目で分けると 0.88  (distance<=2 → melee_attack / 他 → shoot)
+   同じ会話の他の答えで当てると 0.00  (当てられた 4 件)
+   会話ごと: 手:iid_0 {'shoot': 1, 'melee_attack': 1}; r1:round3 {'shoot': 1, 'melee_attack': 1}
+
+■ orc_pair_night_alone_alarm  7 件  {'raise_alarm': 6, 'shoot': 1}  多数の割合 0.86
+   一つの項目で分けると 0.86  (None)
+   同じ会話の他の答えで当てると 1.00  (当てられた 4 件)
+   会話ごと: r1:round4 {'raise_alarm': 4}
+
+■ orc_pair_night  6 件  {'raise_alarm': 4, 'shoot': 2}  多数の割合 0.67
+   一つの項目で分けると 0.83  (hp<=61 → raise_alarm / 他 → shoot)
+   同じ会話の他の答えで当てると 1.00  (当てられた 2 件)
+   会話ごと: r1:round3 {'shoot': 2}
+
+■ mid_hp_pair_retreat  6 件  {'shoot': 2, 'retreat': 4}  多数の割合 0.67
+   一つの項目で分けると 0.83  (hp<=34 → retreat / 他 → shoot)
+   同じ会話の他の答えで当てると 0.50  (当てられた 4 件)
+   会話ごと: r1:round2 {'retreat': 2}; r1:round3 {'retreat': 1, 'shoot': 1}
+

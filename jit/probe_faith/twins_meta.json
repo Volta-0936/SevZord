@@ -1,0 +1,302 @@
+{
+ "s4-1837-flip": {
+  "of": "s4-1837",
+  "kind": "cited",
+  "factor": "hp<=30"
+ },
+ "s4-1837-ctrl": {
+  "of": "s4-1837",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-1350-flip": {
+  "of": "s4-1350",
+  "kind": "cited",
+  "factor": "alarm=false"
+ },
+ "s4-1350-ctrl": {
+  "of": "s4-1350",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0958-flip": {
+  "of": "s4-0958",
+  "kind": "cited",
+  "factor": "arrows=0"
+ },
+ "s4-0958-ctrl": {
+  "of": "s4-0958",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0813-flip": {
+  "of": "s4-0813",
+  "kind": "cited",
+  "factor": "alarm=false"
+ },
+ "s4-0813-ctrl": {
+  "of": "s4-0813",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-1396-flip": {
+  "of": "s4-1396",
+  "kind": "cited",
+  "factor": "alarm=false"
+ },
+ "s4-1396-ctrl": {
+  "of": "s4-1396",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0654-flip": {
+  "of": "s4-0654",
+  "kind": "cited",
+  "factor": "alarm=false"
+ },
+ "s4-0654-ctrl": {
+  "of": "s4-0654",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0416-flip": {
+  "of": "s4-0416",
+  "kind": "cited",
+  "factor": "enemy=mage"
+ },
+ "s4-0416-ctrl": {
+  "of": "s4-0416",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0245-flip": {
+  "of": "s4-0245",
+  "kind": "cited",
+  "factor": "enemy=troll"
+ },
+ "s4-0245-ctrl": {
+  "of": "s4-0245",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-1142-flip": {
+  "of": "s4-1142",
+  "kind": "cited",
+  "factor": "alarm=false"
+ },
+ "s4-1142-ctrl": {
+  "of": "s4-1142",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-1241-flip": {
+  "of": "s4-1241",
+  "kind": "cited",
+  "factor": "hp<=30"
+ },
+ "s4-1241-ctrl": {
+  "of": "s4-1241",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0456-flip": {
+  "of": "s4-0456",
+  "kind": "cited",
+  "factor": "arrows=0"
+ },
+ "s4-0456-ctrl": {
+  "of": "s4-0456",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0711-flip": {
+  "of": "s4-0711",
+  "kind": "cited",
+  "factor": "arrows=0"
+ },
+ "s4-0711-ctrl": {
+  "of": "s4-0711",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0213-flip": {
+  "of": "s4-0213",
+  "kind": "cited",
+  "factor": "alarm=false"
+ },
+ "s4-0213-ctrl": {
+  "of": "s4-0213",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0427-flip": {
+  "of": "s4-0427",
+  "kind": "cited",
+  "factor": "hp<=30"
+ },
+ "s4-0427-ctrl": {
+  "of": "s4-0427",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0605-flip": {
+  "of": "s4-0605",
+  "kind": "cited",
+  "factor": "arrows=0"
+ },
+ "s4-0605-ctrl": {
+  "of": "s4-0605",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0192-flip": {
+  "of": "s4-0192",
+  "kind": "cited",
+  "factor": "hp>=31"
+ },
+ "s4-0192-ctrl": {
+  "of": "s4-0192",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-1665-flip": {
+  "of": "s4-1665",
+  "kind": "cited",
+  "factor": "hp>=31"
+ },
+ "s4-1665-ctrl": {
+  "of": "s4-1665",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0476-flip": {
+  "of": "s4-0476",
+  "kind": "cited",
+  "factor": "hp>=31"
+ },
+ "s4-0476-ctrl": {
+  "of": "s4-0476",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-2195-flip": {
+  "of": "s4-2195",
+  "kind": "cited",
+  "factor": "hp<=30"
+ },
+ "s4-2195-ctrl": {
+  "of": "s4-2195",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-2245-flip": {
+  "of": "s4-2245",
+  "kind": "cited",
+  "factor": "hp<=30"
+ },
+ "s4-2245-ctrl": {
+  "of": "s4-2245",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0903-flip": {
+  "of": "s4-0903",
+  "kind": "cited",
+  "factor": "hp>=31"
+ },
+ "s4-0903-ctrl": {
+  "of": "s4-0903",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-2329-flip": {
+  "of": "s4-2329",
+  "kind": "cited",
+  "factor": "enemy=mage"
+ },
+ "s4-2329-ctrl": {
+  "of": "s4-2329",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-2117-flip": {
+  "of": "s4-2117",
+  "kind": "cited",
+  "factor": "hp<=30"
+ },
+ "s4-2117-ctrl": {
+  "of": "s4-2117",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-1015-flip": {
+  "of": "s4-1015",
+  "kind": "cited",
+  "factor": "hp>=31"
+ },
+ "s4-1015-ctrl": {
+  "of": "s4-1015",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-1955-flip": {
+  "of": "s4-1955",
+  "kind": "cited",
+  "factor": "hp>=31"
+ },
+ "s4-1955-ctrl": {
+  "of": "s4-1955",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0095-flip": {
+  "of": "s4-0095",
+  "kind": "cited",
+  "factor": "hp<=30"
+ },
+ "s4-0095-ctrl": {
+  "of": "s4-0095",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0741-flip": {
+  "of": "s4-0741",
+  "kind": "cited",
+  "factor": "hp>=31"
+ },
+ "s4-0741-ctrl": {
+  "of": "s4-0741",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0519-flip": {
+  "of": "s4-0519",
+  "kind": "cited",
+  "factor": "hp>=31"
+ },
+ "s4-0519-ctrl": {
+  "of": "s4-0519",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0283-flip": {
+  "of": "s4-0283",
+  "kind": "cited",
+  "factor": "hp>=31"
+ },
+ "s4-0283-ctrl": {
+  "of": "s4-0283",
+  "kind": "control",
+  "factor": "post"
+ },
+ "s4-0337-flip": {
+  "of": "s4-0337",
+  "kind": "cited",
+  "factor": "distance=1"
+ },
+ "s4-0337-ctrl": {
+  "of": "s4-0337",
+  "kind": "control",
+  "factor": "post"
+ }
+}

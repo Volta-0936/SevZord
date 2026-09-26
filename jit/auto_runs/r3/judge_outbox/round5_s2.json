@@ -1,0 +1,23 @@
+{
+  "s4-0635": {"action": "take_cover", "basis": "gap", "factors": ["arrows=0", "distance>=8", "hp<=47"], "why": "矢が無く射れず、体力半分で単独なので遮蔽で待つ"},
+  "s4-2071": {"action": "hold_position", "basis": "L7", "factors": ["enemy=none"], "why": "脅威が無いので持ち場を守る"},
+  "s4-2239": {"action": "take_cover", "basis": "L6", "factors": ["time=night", "arrows=0", "cover=true"], "why": "夜で矢も無いので遮蔽に隠れて敵の接近を待つ"},
+  "s4-0559": {"action": "hold_position", "basis": "gap", "factors": ["arrows=0", "enemy=goblin", "hp>=91"], "why": "矢は無いが相手は小鬼一体、体力十分で門を守る"},
+  "s4-2020": {"action": "melee_attack", "basis": "L2", "factors": ["distance<=1", "hp>=88", "allies>=3"], "why": "敵が隣接し体力も味方も十分なので近接で戦う"},
+  "s4-2250": {"action": "raise_alarm", "basis": "L5", "factors": ["alarm=false", "enemy_count>=3", "arrows=0"], "why": "オーク三体は深刻な脅威で警報が未だなので鳴らす"},
+  "s4-2207": {"action": "hold_position", "basis": "gap", "factors": ["allies>=3", "arrows=0", "distance>=9"], "why": "トロルは遠く矢も無い、味方がいるので門を固める"},
+  "s4-1287": {"action": "raise_alarm", "basis": "L5", "factors": ["alarm=false", "enemy_count>=2", "arrows=0"], "why": "オーク二体が門へ迫り警報が未だ、射れないので鳴らす"},
+  "s4-0939": {"action": "take_cover", "basis": "gap", "factors": ["hp<=37", "arrows=0", "allies>=3"], "why": "手負いだが瀕死ではなく、弱った敵は味方に任せ遮蔽へ"},
+  "s4-2165": {"action": "hold_position", "basis": "L7", "factors": ["enemy=none"], "why": "脅威が無いので持ち場を守る"},
+  "s4-1054": {"action": "melee_attack", "basis": "L2,L5+gap", "factors": ["distance<=1", "enemy_hp<=20", "hp>=94"], "why": "隣接の敵は瀕死、警報より先に仕留める方が得"},
+  "s4-2407": {"action": "hold_position", "basis": "gap", "factors": ["arrows=0", "cover=false", "hp>=51"], "why": "魔術師を射る矢も遮蔽も無いが体力は保つので門に留まる"},
+  "s4-2387": {"action": "take_cover", "basis": "L6", "factors": ["time=night", "arrows=0", "cover=true"], "why": "夜にトロルが迫り矢も無いので遮蔽から味方と迎える"},
+  "s4-2248": {"action": "retreat", "basis": "L1,L2+gap", "factors": ["hp<=22", "potion=false", "allies=0"], "why": "深手で薬が無く単独なので、射るより退いて生き延びる"},
+  "s4-2385": {"action": "take_cover", "basis": "L6", "factors": ["time=night", "arrows=0", "cover=true"], "why": "夜にトロルが迫り矢も無いので遮蔽から味方と迎える"},
+  "s4-2478": {"action": "raise_alarm", "basis": "L2,L5+gap", "factors": ["alarm=false", "allies=0", "enemy_count>=2"], "why": "夜に単独でオーク二体、斬るより先に警報で助けを呼ぶ"},
+  "s4-2216": {"action": "raise_alarm", "basis": "L2,L5+gap", "factors": ["alarm=false", "enemy_count>=5", "allies=0"], "why": "小鬼五体は深刻で敵はまだ遠い、射るより警報を先に"},
+  "s4-1309": {"action": "raise_alarm", "basis": "L2,L5+gap", "factors": ["alarm=false", "allies=0", "enemy_count>=2"], "why": "単独でオーク二体、矢四本では足りず先に警報を鳴らす"},
+  "s4-2009": {"action": "hold_position", "basis": "L7", "factors": ["enemy=none", "hp>=61"], "why": "脅威が無く深手でもないので薬を温存し持ち場を守る"},
+  "s4-2381": {"action": "hold_position", "basis": "gap", "factors": ["arrows=0", "allies>=3", "enemy=goblin"], "why": "弱った小鬼二体で味方も多く、矢が無いので持ち場で待つ"},
+  "s4-2252": {"action": "hold_position", "basis": "L1,L7+gap", "factors": ["enemy=none", "hp<=31", "potion=false"], "why": "深手寸前だが脅威が無く退く理由が薄いので持ち場を守る"}
+}
